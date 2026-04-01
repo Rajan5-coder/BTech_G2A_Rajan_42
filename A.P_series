@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main ()
+{
+    int a,n,d;
+    printf("Enter the value of terms: ");
+    scanf("%d",&n);
+    printf("Enter the 1st term: ");
+    scanf("%d",&a);
+    printf("Enter the value of common difference: ");
+    scanf("%d",&d);
+    for(int i=1; i<=n; i=i+1){
+        printf("%d ",a);
+        a = a+d;
+    }
+    return 0;
+}
+   
