@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+    float sqt(float a){
+        a = sqrt(a);
+        return a;
+    }
+    float power(float a,float b){
+        a = pow(a,b);
+        return a;
+    }
+
+        int main(){
+            float m,n,pwer;    // m --> Base , n --> power
+            float root;
+            printf("Enter the value of m and n: ");
+            scanf("%f %f",&m,&n);
+            root = sqrt(m);
+            pwer = power(m,n);
+            printf("Root = %f ",root);
+            printf("\nPower = %f ",pwer);
+   return 0;
+}
