@@ -1,0 +1,24 @@
+#include<stdio.h>
+  int main(){
+
+    int m,n;
+    printf("Enter the value of m and n: ");
+    scanf("%d %d",&m,&n);
+    int sum=0,a[m][n];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("Enter the value of a[%d][%d]",i,j);
+            scanf("%d",&a[i][j]);            
+     }
+   }
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            if(i==j){
+                sum = sum + a[i][j];
+            }    
+        }
+    }
+     printf("Sum = %d",sum);
+
+ return 0;
+}
