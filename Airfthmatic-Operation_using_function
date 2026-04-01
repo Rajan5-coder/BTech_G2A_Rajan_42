@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+
+int add(int x,int y){  
+     return x+y;
+}
+int sub(int x,int y){  
+     return x-y;
+}
+int multi(int x,int y){  
+     return x*y;
+}
+int division(int x,int y){  
+     return x/y;
+}
+
+
+int main(){ 
+    int a,b;
+    printf("Enter the value of a and b: ");
+    scanf("%d %d",&a,&b);
+    int sum = add(a,b);
+    int subs = sub(a,b);
+    int multiply = multi(a,b);
+    int divide = division(a,b);
+    printf("sum = %d",sum);
+    printf("\nsubstraction = %d",subs);
+    printf("\nmultiplication = %d",multiply);
+    printf("\ndividision = %d",divide);
+
+    return 0;
+}
